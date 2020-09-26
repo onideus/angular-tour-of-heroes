@@ -6,13 +6,11 @@ import { Injectable } from '@angular/core';
 export class MessageService {
   messages: string[] = [];
 
-  // tslint:disable-next-line:typedef
-  add(message: string) {
+  add(message: string): void {
     this.messages.push(message);
   }
 
-  // tslint:disable-next-line:typedef
-  clear() {
+  clear(): void {
     this.messages = [];
   }
 }
